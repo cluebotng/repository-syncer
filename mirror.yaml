@@ -1,0 +1,98 @@
+# ClueBot III
+cluebot3:
+  source: https://github.com/cluebotng/cluebot3.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebot3.git
+
+# ClueBot NG
+core:
+  source: https://github.com/cluebotng/core.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-core.git
+
+## Wrapper around `core` to keep pack specific bits out of the main repo
+external-core:
+  source: https://github.com/cluebotng/external-core.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-core.git
+
+bot:
+  source: https://github.com/cluebotng/bot.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-bot.git
+
+irc_relay:
+  source: https://github.com/cluebotng/irc_relay.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-irc-relay.git
+
+wikipedia:
+  source: https://github.com/cluebotng/wikipedia.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-wikipedia-php-client.git
+
+# ClueBot NG Report
+report:
+  source: https://github.com/cluebotng/report.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-report-interface.git
+
+# ClueBot NG Review
+reviewer:
+  source: https://github.com/cluebotng/reviewer.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-review-interface.git
+
+# ClueBot NG Trainer
+trainer:
+  source: https://github.com/cluebotng/trainer.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-trainer.git
+
+fileserver:
+  source: https://github.com/cluebotng/fileserver.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-fileserver.git
+
+# ClueBot NG Staging/Experimental
+botng:
+  source: https://github.com/cluebotng/botng.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-bot-ng.git
+
+# Deployment config
+component-configs:
+  source: https://github.com/cluebotng/component-configs.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-component-configs.git
+
+# Monitoring (used across tools/accounts)
+monitoring:
+  source: https://github.com/cluebotng/monitoring.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring.git
+
+monitoring-probes:
+  source: https://github.com/cluebotng/monitoring-probes.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring-probes.git
+
+external-grafana-alloy:
+  source: https://github.com/cluebotng/external-grafana-alloy.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-grafana-alloy.git
+
+external-pushgateway:
+  source: https://github.com/cluebotng/external-pushgateway.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-pushgateway.git
+
+# External tooling packaged as a deployable container (via pack), used across tools/accounts
+external-redis:
+  source: https://github.com/cluebotng/external-redis.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-redis.git
+
+external-utilities:
+  source: https://github.com/cluebotng/external-utilities.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-utilities.git
+
+# Misc
+repository-syncer:
+  source: https://github.com/cluebotng/repository-syncer.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-repository-syncer.git
+
+ci-execute-fabric:
+  source: https://github.com/cluebotng/ci-execute-fabric.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-github-ci-execute-fabric.git
+
+ci-update-component-ref:
+  source: https://github.com/cluebotng/ci-update-component-ref.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-ci-update-component-ref.git
+
+ci-toolforge-deploy:
+  source: https://github.com/cluebotng/ci-toolforge-deploy.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-ci-toolforge-deploy.git

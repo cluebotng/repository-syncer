@@ -1,0 +1,12 @@
+name: Deploy
+on: { push: { tags: [ 'v*' ] } }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cluebotng/ci-update-component-ref@main
+        with:
+          tool: 'cluebot-syncer'
+          component: 'repository-syncer'
+          ref: '${{ github.ref }}'
+          gh_app_key: '${{ secrets.CI_COMPONENT_CONFIGS_APP_KEY }}'

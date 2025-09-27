@@ -1,0 +1,8 @@
+[_]
+schema-version = "0.2"
+
+[com.heroku.buildpacks.deb-packages]
+install = [
+    { name = "git", force = true },
+    { name = "libnss-wrapper", force = true },
+]

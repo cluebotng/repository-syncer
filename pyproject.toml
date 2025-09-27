@@ -1,0 +1,9 @@
+[project]
+name = "repository-syncer"
+version = "1.0"
+requires-python = ">=3.7"
+dependencies = [
+    "click",
+    "requests",
+    "pyyaml",
+]

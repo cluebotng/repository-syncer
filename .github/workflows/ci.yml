@@ -1,0 +1,13 @@
+name: CI
+on: { pull_request: { }, push: { branches: [ main ] } }
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build container
+        run: |
+          docker run \
+            -v /var/run/docker.sock:/var/run/docker.sock \
+            -v $PWD:/workspace -w /workspace \
+            buildpacksio/pack build --builder heroku/builder:24 repository-syncer
