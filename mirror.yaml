@@ -92,10 +92,6 @@ api:
   source: https://github.com/cluebotng/api.git
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-api.git
 
-reviewng:
-  source: https://github.com/cluebotng/reviewng.git
-  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-reviewng.git
-
 # Misc
 repository-syncer:
   source: https://github.com/cluebotng/repository-syncer.git
