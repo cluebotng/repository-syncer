@@ -100,11 +100,12 @@ def _setup_environment():
     if not manage_environment:
         logger.info("Skipping ssh config entry due to manage_environment")
     else:
-        logger.info("Creating config entry for gitlab")
+        logger.info("Creating ssh config")
         with (ssh_dir / "config").open("w") as fh:
-            fh.write("Host gitlab.wikimedia.org\n")
-            fh.write("\tStrictHostKeyChecking Yes\n")
-            fh.write("\tUser git\n")
+            for domain in ["gitlab.wikimedia.org", "github.com"]:
+                fh.write(f"Host {domain}\n")
+                fh.write("\tStrictHostKeyChecking Yes\n")
+                fh.write("\tUser git\n")
 
     # SSH key
     encoded_ssh_key = os.environ.get("GITLAB_SSH_KEY")
