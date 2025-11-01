@@ -8,17 +8,12 @@ core:
   source: https://github.com/cluebotng/core.git
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-core.git
 
-## Wrapper around `core` to keep pack specific bits out of the main repo
-external-core:
-  source: https://github.com/cluebotng/external-core.git
-  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-core.git
-
 bot:
   source: https://github.com/cluebotng/bot.git
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-bot.git
 
-irc_relay:
-  source: https://github.com/cluebotng/irc_relay.git
+irc-relay:
+  source: https://github.com/cluebotng/irc-relay.git
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-irc-relay.git
 
 wikipedia:
@@ -80,6 +75,27 @@ external-utilities:
   source: https://github.com/cluebotng/external-utilities.git
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-utilities.git
 
+external-core:
+  source: https://github.com/cluebotng/external-core.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-core.git
+
+# Old stuff
+external-haproxy:
+  source: https://github.com/cluebotng/external-haproxy.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-external-haproxy.git
+
+packages:
+  source: https://github.com/cluebotng/packages.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-packages.git
+
+api:
+  source: https://github.com/cluebotng/api.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-api.git
+
+reviewng:
+  source: https://github.com/cluebotng/reviewng.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-reviewng.git
+
 # Misc
 repository-syncer:
   source: https://github.com/cluebotng/repository-syncer.git
@@ -96,3 +112,32 @@ ci-update-component-ref:
 ci-toolforge-deploy:
   source: https://github.com/cluebotng/ci-toolforge-deploy.git
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-ci-toolforge-deploy.git
+
+documentation:
+  source: https://github.com/cluebotng/documentation.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-documentation.git
+
+# Generic Toolforge -> GitHub
+toolforge-jobs-api:
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/jobs-api.git
+  target: ssh://github.com/DamianZaremba/jobs-api.git
+
+toolforge-components-api:
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/components-api.git
+  target: ssh://github.com/DamianZaremba/components-api.git
+
+toolforge-builds-api:
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/builds-api.git
+  target: ssh://github.com/DamianZaremba/builds-api.git
+
+toolforge-volume-admission:
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/volume-admission.git
+  target: ssh://github.com/DamianZaremba/volume-admission.git
+
+toolforge-lima-kilo:
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/lima-kilo.git
+  target: ssh://github.com/DamianZaremba/lima-kilo.git
+
+toolforge-toolforge-deploy:
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/toolforge-deploy.git
+  target: ssh://github.com/DamianZaremba/toolforge-deploy.git
