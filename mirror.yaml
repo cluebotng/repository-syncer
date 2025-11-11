@@ -50,9 +50,25 @@ component-configs:
   target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-component-configs.git
 
 # Monitoring (used across tools/accounts)
-monitoring:
-  source: https://github.com/cluebotng/monitoring.git
-  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring.git
+monitoring-prometheus:
+  source: https://github.com/cluebotng/monitoring-prometheus.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring-prometheus.git
+
+monitoring-alertmanager:
+  source: https://github.com/cluebotng/monitoring-alertmanager.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring-alertmanager.git
+
+monitoring-blackbox:
+  source: https://github.com/cluebotng/monitoring-blackbox.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring-blackbox.git
+
+monitoring-grafana:
+  source: https://github.com/cluebotng/monitoring-grafana.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring-grafana.git
+
+monitoring-wiki-update-receiver:
+  source: https://github.com/cluebotng/monitoring-wiki-update-receiver.git
+  target: ssh://gitlab.wikimedia.org/toolforge-repos/cluebotng-monitoring-wiki-update-receiver.git
 
 monitoring-probes:
   source: https://github.com/cluebotng/monitoring-probes.git
