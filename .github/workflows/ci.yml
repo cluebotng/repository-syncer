@@ -16,6 +16,6 @@ jobs:
       - name: Build container
         uses: infrabits/ci-pack@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           image: ghcr.io/${{ github.repository }}:${{ github.sha }}
           use_builder: latest
