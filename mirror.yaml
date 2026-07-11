@@ -134,25 +134,25 @@ documentation:
 
 # Generic Toolforge -> GitHub
 toolforge-jobs-api:
-  source: https://gitlab-ssh.wikimedia.org/repos/cloud/toolforge/jobs-api.git
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/jobs-api.git
   target: ssh://github.com/DamianZaremba/toolforge-jobs-api.git
 
 toolforge-components-api:
-  source: https://gitlab-ssh.wikimedia.org/repos/cloud/toolforge/components-api.git
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/components-api.git
   target: ssh://github.com/DamianZaremba/toolforge-components-api.git
 
 toolforge-builds-api:
-  source: https://gitlab-ssh.wikimedia.org/repos/cloud/toolforge/builds-api.git
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/builds-api.git
   target: ssh://github.com/DamianZaremba/toolforge-builds-api.git
 
 toolforge-volume-admission:
-  source: https://gitlab-ssh.wikimedia.org/repos/cloud/toolforge/volume-admission.git
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/volume-admission.git
   target: ssh://github.com/DamianZaremba/toolforge-volume-admission.git
 
 toolforge-lima-kilo:
-  source: https://gitlab-ssh.wikimedia.org/repos/cloud/toolforge/lima-kilo.git
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/lima-kilo.git
   target: ssh://github.com/DamianZaremba/toolforge-lima-kilo.git
 
 toolforge-toolforge-deploy:
-  source: https://gitlab-ssh.wikimedia.org/repos/cloud/toolforge/toolforge-deploy.git
+  source: https://gitlab.wikimedia.org/repos/cloud/toolforge/toolforge-deploy.git
   target: ssh://github.com/DamianZaremba/toolforge-toolforge-deploy.git
