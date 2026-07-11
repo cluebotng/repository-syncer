@@ -102,7 +102,7 @@ def _setup_environment():
     else:
         logger.info("Creating ssh config")
         with (ssh_dir / "config").open("w") as fh:
-            for domain in ["gitlab.wikimedia.org", "github.com"]:
+            for domain in ["gitlab.wikimedia.org", "gitlab-ssh.wikimedia.org", "github.com"]:
                 fh.write(f"Host {domain}\n")
                 fh.write("\tStrictHostKeyChecking Yes\n")
                 fh.write("\tUser git\n")
