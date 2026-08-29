@@ -1,0 +1,11 @@
+name: Renovate CI
+on: { pull_request: { } }
+jobs:
+  format-renovate-change:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: infrabits/ci-format-renovate-change@main
+        with:
+          github-token: ${{ github.token }}
