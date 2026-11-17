@@ -6,6 +6,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: infrabits/ci-format-renovate-change@46f0762862b1265cf615b75440617f3f95cd13c0 # v1.3.0
+      - uses: infrabits/ci-format-renovate-change@dc3bbd78d006bc45455c9723faa2c460fbfab7fc # v1.4.0
         with:
           github-token: ${{ github.token }}
